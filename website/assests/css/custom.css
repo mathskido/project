@@ -227,5 +227,85 @@ header .header_rap .nav_icons ul.nav_items li:last-child {padding-right: 0px;}
 .banner .banner_wrap .guided_by h3 {font-size: 70px;line-height: 100px;padding-bottom: 0px;}
 /*================================= Ends Banner =================================*/ 
 
+/*================================= Image With Text =================================*/
+.img_text .text_wrap .text_des {display: flex;margin-bottom: 30px;}
+.img_text .text_wrap .text_des i {font-size: 30px;}
+.img_text .text_wrap .text_des p {font-size: 26px;line-height: 36px;font-weight: 400;margin-left: 15px;}
+.img_text .text_wrap .text_des.blue_bg {background: #6495ec;padding: 10px 20px;border-radius: 20px;}
+.img_text .text_wrap .text_des.blue_bg p {margin-left: 0;color: #fff;text-align: center;text-transform: capitalize;}
+.img_text .text_wrap .text_des.blue_bg i {display: none;}
+/*================================= Ends Image With Text =================================*/ 
+
+
+
+/*================================= Basic Examples =================================*/
+#blog-txt,#code-txt,#project-txt,#about-txt{display: none;}
+.basic_examples .examples_wrap {display: flex;flex-wrap: wrap;box-shadow: 0px 13px 38.64px 3.36px rgba(138, 138, 144, 0.12);padding: 45px 30px;border-radius: 20px;}
+.basic_examples .examples_wrap .tabs {display: flex;flex-direction: column;max-width: 30%;flex: 0 0 30%;}
+.basic_examples .examples_wrap .tabs label {border-radius: 5px;max-width: 90%;width: 100%;padding: 10px 15px;cursor: pointer;margin-bottom: 10px;}
+.basic_examples .examples_wrap .tabs input{display: none;}
+.basic_examples .examples_wrap .tabs label div {font-size: 30px;line-height: 40px;font-weight: 600;}
+.basic_examples .examples_wrap .tabs label.active{background-color: #6495ec;}
+.basic_examples .examples_wrap .tabs label.active div, .basic_examples .examples_wrap .tabs label.active i{color: #fff;}
+.basic_examples .examples_wrap .text{grid-column: span 3;}
+.basic_examples .examples_wrap .text .txt-head {font-weight: 600;font-size: 28px;line-height: 42px;padding-bottom: 16px;}
+.basic_examples .examples_wrap .text p.text_ans {font-size: 26px;line-height: 36px;font-weight: 400;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item i {font-size: 30px;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item i.blue {color: #6495ec;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item i.red {color: #ff0c01;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item i.green {color: darkseagreen;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item i.orange {color: #ff4b1e;}
+.basic_examples .examples_wrap .text .bottle_wrap {padding: 10px 0px;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item {display: flex;margin-bottom: 20px;}
+.basic_examples .examples_wrap .text {max-width: 70%;flex: 0 0 70%;}
+.basic_examples .examples_wrap .text .bottle_wrap .bottle_item p{font-size: 26px;line-height: 36px;font-weight: 400;margin-left: 20px;}
+.basic_examples .examples_wrap .text .qa_wrap {padding-bottom: 20px;}
+/*================================= Ends Basic Examples =================================*/ 
+
+/*================================= Terms and Definition =================================*/
+.accordion_item {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion_item:last-of-type {
+  border-bottom: 0;
+}
+
+.active,
+.accordion_item:hover {
+  background-color: #ccc;
+}
+
+.accordion_item:after {
+  content: "\002B";
+  color: #777;
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/*================================= Ends Terms and Definition =================================*/ 
+
 /*================================= Footer =================================*/
 /*================================= Ends Footer =================================*/ 

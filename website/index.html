@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Probability | Home-Page</title>
     <link rel="stylesheet" href="./assests/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assests/js/script.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -50,5 +54,190 @@
       </div>
     </section>
     <!-- Banner ends -->
+
+    <!-- Image With Text -->
+    <section class="img_text section_space">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text_center">
+            <h2 class="section_title">Introduction To Probability</h2>
+          </div>
+        </div>
+        <div class="row align_center">
+          <div class="col-md-6">
+            <div class="img_wrap">
+              <img src="./assests/gallery/img_text1.jpg" alt="Image Text">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul class="text_wrap">
+              <li class="text_des">
+                <i class="fa-solid fa-dice fa-flip"></i>
+                <p>Probability means possibility. Probability is a measure of the likelihood of an event to occur. 
+                Many events cannot be predicted with total certainty.</p>
+              </li>
+              <li class="text_des">
+                <i class="fa-solid fa-dice fa-flip"></i>
+                <p> We can predict only the chance of an event to occur i.e., how likely they are going to happen, using it.</p>
+              </li>
+              <li class="text_des">
+                <i class="fa-solid fa-dice fa-flip"></i>
+                <p>Probability can range from 0 to 1, where 0 means the event to be an impossible one and 1 indicates a certain event.</p>
+              </li>
+              <li class="text_des">
+                <i class="fa-solid fa-dice fa-flip"></i>
+                <p>The probability formula is defined as the possibility of an event to happen is equal to the ratio 
+                of the number of favourable outcomes and the total number of outcomes.</p>
+              </li>
+              <li class="text_des blue_bg">
+                <i class="fa-solid fa-dice fa-flip"></i>
+                <p>Probability of event to happen P(E) = Number of favourable outcomes / Total Number of outcomes</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ends Image With Text -->
+
+    <!-- Basic Examples -->
+    <section class="basic_examples section_space">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text_center">
+            <h2 class="section_title"> Basic Examples </h2>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="examples_wrap">
+              <div class="tabs">
+                  <input type="radio" name="tabs" id="home-ch" onclick="home_display()">
+                  <label for="home-ch" id="exam-one" class="active"><div>Example 1</div></label>
+                  
+                  <input type="radio" name="tabs" id="blog-ch" onclick="blog_display()">
+                  <label for="blog-ch" id="exam-two"><div>Example 2</div></label>
+                  
+                  <input type="radio" name="tabs" id="about-ch" onclick="about_display()">
+                  <label for="about-ch" id="exam-three"><div>Example 3</div></label>
+              </div>
+              <div class="text">
+                  <div id="blog-txt">
+                      <p class="txt-head">There are 6 pillows in a bed, 3 are red, 2 are yellow and 1 is blue. What is the probability of picking a yellow pillow?</p>
+                      <p class="text_ans">The probability is equal to the number of yellow pillows in the bed divided by the total number of pillows, i.e. 2/6 = 1/3.</p>
+                  </div>
+                  <div id="home-txt">
+                      <p class="txt-head">There is a container full of coloured bottles, red, blue, green and orange. Some of the bottles are picked out and displaced. Sumit did this 1000 times and got the following results:</p>
+                      <ul class="bottle_wrap">
+                        <li class="bottle_item">
+                          <i class="fa-solid fa-bottle-water fa-bounce blue"></i>
+                          <p>No. of blue bottles picked out: 300</p>
+                        </li>
+                        <li class="bottle_item">
+                          <i class="fa-solid fa-bottle-water fa-bounce red"></i>
+                          <p>No. of red bottles: 200</p>
+                        </li>
+                        <li class="bottle_item">
+                          <i class="fa-solid fa-bottle-water fa-bounce green"></i>
+                          <p> No. of green bottles: 450</p>
+                        </li>
+                        <li class="bottle_item">
+                          <i class="fa-solid fa-bottle-water fa-bounce orange"></i>
+                          <p> No. of orange bottles: 50</p>
+                        </li>
+                      </ul>
+                      <div class="qa_wrap">
+                        <p class="txt-head"> A) What is the probability that Sumit will pick a green bottle?</p>
+                        <p class="text_ans">For every 1000 bottles picked out, 450 are green. Therefore, P(green) = 450/1000 = 0.45</p>
+                      </div>
+                      <div class="qa_wrap">
+                        <p class="txt-head"> B) If there are 100 bottles in the container, how many of them are likely to be green?</p>
+                        <p class="text_ans">The experiment implies that 450 out of 1000 bottles are green. Therefore, out of 100 bottles, 45 are green.</p>
+                      </div>
+                  </div>
+                  <div id="about-txt">
+                      <p class="txt-head">What are the possible outcomes when tossing a single coin?</p>
+                      <p class="text_ans">When tossing a single coin, there are two possible outcomes: either we get a Head (H) or a Tail (T).</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Basic Examples -->
+
+    <!-- Terms and Definition -->
+    <section class="accordion_sec section_space">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text_center">
+            <h2 class="section_title">Probability Terms and Definition</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="accordion_wrapper">
+                <button class="accordion_item">Sample Space</button>
+                <div class="panel">
+                  <p>The set of all the possible outcomes to occur in any trial.</p>
+                  <p class="example">Example:-</p>
+                  <ul class="panel_wrap">
+                    <li class="panel_item">Tossing a coin, Sample Space (S) = {H,T}</li>
+                    <li class="panel_item">Rolling a die, Sample Space (S) = {1,2,3,4,5,6}</li>
+                  </ul>
+                </div>
+
+                <button class="accordion_item">Sample Point</button>
+                <div class="panel">
+                  <p>It is one of the possible results.</p>
+                  <p class="example">Example:-</p>
+                  <p class="for_panel_wrap">In a deck of Cards:</p>
+                  <ul class="panel_wrap">
+                    <li class="panel_item">4 of hearts is a sample point.</li>
+                    <li class="panel_item">The queen of clubs is a sample point.</li>
+                  </ul>
+                </div>
+
+                <button class="accordion_item">Experiment or Trial</button>
+                <div class="panel">
+                  <p>A series of actions where the outcomes are always uncertain.</p>
+                  <p class="example">Example:-</p>
+                  <p class="example_txt">The tossing of a coin, Selecting a card from a deck of cards, throwing a dice.</p>
+                </div>
+
+                <button class="accordion_item">Event</button>
+                <div class="panel">
+                  <p>It is a single outcome of an experiment.</p>
+                  <p class="example">Example:-</p>
+                  <p class="example_txt">Getting a Heads while tossing a coin is an event.</p>
+                </div>
+
+                <button class="accordion_item">Outcome</button>
+                <div class="panel">
+                  <p>Possible result of a trial/experiment.</p>
+                  <p class="example">Example:-</p>
+                  <p class="example_txt">T (tail) is a possible outcome when a coin is tossed.</p>
+                </div>
+
+                <button class="accordion_item">Complimentary event</button>
+                <div class="panel">
+                  <p>The non-happening events. The complement of an event A is the event, not A (or A’).</p>
+                  <p class="example">Example:-</p>
+                  <p class="example_txt">In a standard 52-card deck, A = Draw a heart, then A’ = Don’t draw a heart.</p>
+                </div>
+
+                <button class="accordion_item">Impossible Event</button>
+                <div class="panel">
+                  <p>The event cannot happen.</p>
+                  <p class="example">Example:-</p>
+                  <p class="example_txt">In tossing a coin, impossible to get both head and tail at the same time.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Terms and Definition -->
   </body>
 </html>
