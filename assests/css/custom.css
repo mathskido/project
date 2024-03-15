@@ -206,7 +206,8 @@ ul.check_list .check_element:last-child, .check_list .check_element:last-child {
 /* ========= End ul li Design, ol li Design ========= */
 
 /*================================= Header =================================*/
-header {box-shadow: 0px 13px 38.64px 3.36px rgba(138, 138, 144, 0.12);padding: 10px 0px;}
+header {padding: 10px 0px;}
+.sticky header {position: fixed;box-shadow: 0px 13px 38.64px 3.36px rgba(138, 138, 144, 0.12);width: 100%;background: #fff;top: 0%;z-index: 999;}
 header .header_rap {display: flex;align-items: center;}
 header .header_rap .header_logo img {width: 100%;max-width: 20%;}
 header .header_rap .nav_icons ul.nav_items {display: flex;justify-content: space-between;}
@@ -218,6 +219,7 @@ header .header_rap .nav_icons ul.nav_items li:last-child {padding-right: 0px;}
 /*================================= Footer =================================*/
 
 /*================================= Banner =================================*/
+.sticky .banner {margin-top: 200px;}
 .banner .banner_wrap p.yellow_text {font-size: 30px;line-height: 35px;font-weight: 800;background: #ffba06;color: #fff;padding: 10px 20px;border-radius: 30px;max-width: max-content;width: 100%;margin-bottom: 20px;}
 .banner .banner_wrap h2 {font-size: 200px;line-height: 210px;font-weight: 800;text-transform: uppercase;background: linear-gradient(90deg, #ff0000 0%, #ffce00 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 .banner .banner_wrap p.banner_txt {font-size: 24px;line-height: 30px;font-weight: 600;background: #ff4c1e;color: #fff;max-width: fit-content;padding: 15px 30px;text-transform: capitalize;border-radius: 12px;margin-top: 20px;}
@@ -281,6 +283,8 @@ header .header_rap .nav_icons ul.nav_items li:last-child {padding-right: 0px;}
 footer {position: relative;}
 footer:before {content: "";position: absolute;background: #ffba06;height: 80%;width: 100%;z-index: -1;top: 20%;}
 footer .copyright {padding: 60px 0px 30px;}
+footer .copyright p {position: relative;}
+footer .copyright p:before {content: "";position: absolute;background: #fff;height: 2px;width: 100%;left: 0;top: -10px;}
 footer .footer_wrap {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: end;}
 footer .footer_wrap .footer_left {max-width: 20%;flex: 0 0 20%; position: relative;}
 footer .footer_wrap .footer_left:before {content: "";position: absolute;background: #ffba06;height: 62%;width: 70%;top: -4%;border-radius: 50%;z-index: -1;left: -5%;}
@@ -292,6 +296,6 @@ footer .footer_wrap .footer_right .section_links .nav_items {display: flex;}
 footer .footer_wrap .footer_right .section_links .nav_items li {padding-right: 80px;}
 footer .footer_wrap .footer_right .nav_items li a {font-size: 24px;line-height: 30px;}
 footer .footer_wrap .footer_right .useful_links {margin-bottom: 30px;}
-footer .footer_wrap .footer_right .section_links h3, footer .footer_wrap .footer_right .useful_links h3 {font-size: 26px;line-height: 36px;font-weight: 600;padding-bottom: 8px;}
+footer .footer_wrap .footer_right .section_links h3, footer .footer_wrap .footer_right .useful_links h3 {font-size: 26px;line-height: 36px;font-weight: 600;padding-bottom: 8px;color: #fff;}
 footer .footer_wrap .footer_right .useful_links .nav_items {display: flex;justify-content: space-between;}
 /*================================= Ends Footer =================================*/ 

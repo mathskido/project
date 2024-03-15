@@ -48,3 +48,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 // Ends
+
+// Sticky Header
+window.addEventListener('scroll', function() {
+  // Add 'sticky' class to body when user scrolls
+  if (window.scrollY > 0) {
+    document.body.classList.add('sticky');
+  } else {
+    document.body.classList.remove('sticky');
+  }
+});
+// Ends
