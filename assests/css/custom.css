@@ -264,7 +264,7 @@ header .header_rap .nav_icons ul.nav_items li:last-child {padding-right: 0px;}
 
 /*================================= Terms and Definition =================================*/
 .accordion_sec .accordion_wrapper .panel {padding: 0 18px;background-color: #fff;max-height: 0;overflow: hidden;}
-.accordion_sec .accordion_wrapper .accordion_item {background-color: #eee;color: #444;cursor: pointer;padding: 18px;width: 100%;border: none;text-align: left;outline: none;font-size: 15px;transition: 0.5s all ease-in-out;border-bottom: 1px solid #ccc;}
+.accordion_sec .accordion_wrapper .accordion_item {background-color: #eee;color: #444;cursor: pointer;padding: 18px;width: 100%;border: none;text-align: left;outline: none;font-size: 24px;line-height: 30px; transition: 0.5s all ease-in-out;border-bottom: 1px solid #ccc;}
 .accordion_sec .accordion_wrapper .accordion_item:last-of-type {border-bottom: 0;}
 .accordion_sec .accordion_wrapper .accordion_item:hover {background-color: #ccc;}
 .accordion_sec .accordion_wrapper .accordion_item:after {content: "\002B";color: #777;font-weight: 700;float: right;margin-left: 5px;}
@@ -278,4 +278,20 @@ header .header_rap .nav_icons ul.nav_items li:last-child {padding-right: 0px;}
 /*================================= Ends Terms and Definition =================================*/ 
 
 /*================================= Footer =================================*/
+footer {position: relative;}
+footer:before {content: "";position: absolute;background: #ffba06;height: 80%;width: 100%;z-index: -1;top: 20%;}
+footer .copyright {padding: 60px 0px 30px;}
+footer .footer_wrap {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: end;}
+footer .footer_wrap .footer_left {max-width: 20%;flex: 0 0 20%; position: relative;}
+footer .footer_wrap .footer_left:before {content: "";position: absolute;background: #ffba06;height: 62%;width: 70%;top: -4%;border-radius: 50%;z-index: -1;left: -5%;}
+footer .footer_wrap .footer_left img {max-width: 60%;width: 100%;}
+footer .footer_wrap .footer_right {max-width: 70%;flex: 0 0 70%;}
+footer .footer_wrap .footer_right .nav_items li a {font-size: 30px;line-height: 50px;}
+footer .footer_wrap .footer_left p.footer_quote {font-size: 24px;line-height: 32px;font-weight: 400;}
+footer .footer_wrap .footer_right .section_links .nav_items {display: flex;}
+footer .footer_wrap .footer_right .section_links .nav_items li {padding-right: 80px;}
+footer .footer_wrap .footer_right .nav_items li a {font-size: 24px;line-height: 30px;}
+footer .footer_wrap .footer_right .useful_links {margin-bottom: 30px;}
+footer .footer_wrap .footer_right .section_links h3, footer .footer_wrap .footer_right .useful_links h3 {font-size: 26px;line-height: 36px;font-weight: 600;padding-bottom: 8px;}
+footer .footer_wrap .footer_right .useful_links .nav_items {display: flex;justify-content: space-between;}
 /*================================= Ends Footer =================================*/ 
