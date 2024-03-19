@@ -105,6 +105,7 @@ i, svg {color: #000;}
 .pt50 {padding-top: 50px;}
 .pt60 {padding-top: 60px;}
 .pt100 {padding-top: 100px;}
+.pt120 {padding-top: 120px;}
 /*==Ends */
 /* Padding Bottom */
 .pb10 {padding-bottom: 10px;}
@@ -115,6 +116,7 @@ i, svg {color: #000;}
 .pb60 {padding-bottom: 60px;}
 .pb90 {padding-bottom: 90px;}
 .pb100 {padding-bottom: 100px;}
+.pb120 {padding-bottom: 120px;}
 /*==Ends */
 /* Padding Left */
 .pl10 {padding-left: 10px;}
@@ -134,6 +136,7 @@ i, svg {color: #000;}
 .mt50 {margin-top: 50px;}
 .mt60 {margin-top: 60px;}
 .mt100 {margin-top: 100px;}
+.mt120 {margin-top: 120px;}
 /*==Ends */
 /* Margin Bottom */
 .mb10 {margin-bottom: 10px;}
@@ -278,6 +281,32 @@ header .header_rap .nav_icons ul.nav_items li:last-child {padding-right: 0px;}
 .accordion_sec .accordion_wrapper .accordion_item ~ .panel p:first-child {padding-top: 10px;}
 .accordion_sec .accordion_wrapper .accordion_item ~ .panel .panel_wrap .panel_item:last-child {padding-bottom: 10px;}
 /*================================= Ends Terms and Definition =================================*/ 
+
+/*================================= Blogs =================================*/
+.sticky .Blogs {position: relative;top: 174px;}
+.Blogs .blog_wrapper {display: flex;flex-wrap: wrap;justify-content: space-between;border-radius: 20px;}
+.Blogs .blog_wrapper .blog_post {border: 1px solid #000;max-width: 32%;flex: 0 0 32%;margin-bottom: 30px;border-radius: 20px;}
+.Blogs .blog_wrapper .blog_post .blog_img img {border-top-left-radius: 20px;border-top-right-radius: 20px;}
+.Blogs .blog_wrapper .blog_post .blog_content {padding: 20px 20px 50px;}
+.Blogs .blog_wrapper .blog_post .blog_content a {display: inline-block;}
+.Blogs .blog_wrapper .blog_post .blog_content p {font-size: 20px;line-height: 30px;font-weight: 500;padding-bottom: 35px;}
+.Blogs .blog_wrapper .blog_post .blog_content a {display: inline-block;font-size: 20px;line-height: 28px;font-weight: 400;border: 2px solid;background: linear-gradient(90deg, #ff0000 0%, #ffce00 100%);padding: 10px 30px;border-radius: 10px;color: #fff;transition: 0.5s all ease-in-out;}
+.Blogs .blog_wrapper .blog_post .blog_content a:hover {background: transparent;border-color: #ffce00;color: red;}
+/*================================= Ends Blogs =================================*/ 
+
+/*================================= About Us =================================*/
+.sticky .about_us.img_text{position: relative;top: 174px;}
+.about_us.img_text .img_wrap img {float: right;border-radius: 25px;}
+.about_us.img_text .text_wrap h2 {font-weight: 600;}
+.about_us.img_text .text_wrap .guide_name {font-weight: 800;color: #1f6ed3;}
+.awesome_member .member_wrapper {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.awesome_member .member_wrapper .member_card {border: 1px solid #000;max-width: 24%;flex: 0 0 24%;margin-bottom: 20px;border-radius: 25px;}
+.awesome_member .member_wrapper .member_card .member_img img {height: 300px;width: 100%;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+.awesome_member .member_wrapper .member_card .member_detail {padding: 20px 0px;}
+.awesome_member .member_wrapper .member_card .member_detail h3{padding-bottom:0px;}
+/*================================= Ends About Us =================================*/ 
+
+
 
 /*================================= Footer =================================*/
 footer {position: relative;}
